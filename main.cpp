@@ -203,6 +203,18 @@ struct linkedList{
 		this->head->prev = NULL;
 		this->head = arr.head;
 	}
+	
+	linkedList *operator + (linkedList arr){
+		tmp = head;
+		linkedList &new_list = *(new linkedList);
+		
+		for(int i = 0; i < length; i++){
+			new_list.append(tmp->data);
+			tmp = tmp->next;
+		}
+		new_list.extend(&arr);
+		return &new_list;
+	}
 };
 
 int main(){
