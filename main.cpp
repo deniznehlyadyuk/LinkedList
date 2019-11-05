@@ -104,13 +104,6 @@ struct linkedList{
 		length--;
 	}
 	
-	void clear(){
-		head->next = NULL;
-		head->prev = NULL;
-		length = 0;
-		delete head;
-	}
-	
 	linkedList *copy(){
 		linkedList &newList = *(new linkedList);
 		tmp = head;
@@ -216,7 +209,3 @@ struct linkedList{
 		return &new_list;
 	}
 };
-
-int main(){
-	return 0;
-}
