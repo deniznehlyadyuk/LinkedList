@@ -12,7 +12,7 @@ struct linkedList{
 	node *tmp = NULL;
 	int length = 0;
 	
-	void *append(int data){
+	void append(int data){
 		if (head == NULL){
 			head = new node;
 			head->data = data;
@@ -218,5 +218,5 @@ struct linkedList{
 };
 
 int main(){
-  return 0;
-]
+	return 0;
+}
