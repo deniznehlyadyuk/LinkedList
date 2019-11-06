@@ -208,4 +208,24 @@ struct linkedList{
 		new_list.extend(&arr);
 		return &new_list;
 	}
+	
+	friend ostream &operator<< (ostream &cout, linkedList &arr);
 };
+
+ostream &operator<< (ostream &out, linkedList &arr) {
+        if (arr.length == 0) {
+                out << "[]" << endl;
+                return out;
+        }
+
+        linkedList::node *tmp = arr.head;
+        out << "[";
+
+        for (int i = 0; i < arr.length-1; i++) {
+                out << tmp->data << ", ";
+                tmp = tmp->next;
+        }
+        out << tmp->data << "]" << endl;
+
+        return out;
+}
