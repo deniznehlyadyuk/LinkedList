@@ -5,10 +5,10 @@
 
 int main()
 {
-	srand(time(NULL));
-
-	LinkedList arr1 = LinkedList();
-	LinkedList arr2 = LinkedList();
+	srand(static_cast<unsigned int> (time(NULL)));
+	
+	LinkedList arr1;
+	LinkedList arr2;
 
 	std::cout << "Test: Adding elements\t(arr1)\t\t";
 	for (int i = 0; i < rand() % 15 + 5; i++) {
