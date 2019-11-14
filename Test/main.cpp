@@ -1,7 +1,7 @@
 ﻿#include <iostream>
 #include <cstdlib>
 #include <ctime>
-#include "LinkedList.h"
+#include "linkedlist.h"
 
 int main()
 {

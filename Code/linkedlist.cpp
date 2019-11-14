@@ -1,5 +1,5 @@
 #include <iostream>
-#include "linkedList.h"
+#include "linkedlist.h"
 
 class Node {
 public:
